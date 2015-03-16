@@ -90,7 +90,7 @@ double* integrateEq(double* equation, size_t degree) {
 /*
 *	Returns quotient of equation with its root using Horner's Scheme
 */
-double* devideBy(double* equation, size_t degree, double root) {
+double* divideBy(double* equation, size_t degree, double root) {
 	double *quotient = malloc(degree * sizeof(double));
 	quotient[degree - 1] = equation[degree];
 	for (int i = degree - 2; i >= 0; i--)
@@ -224,8 +224,8 @@ void solvePrintEq(double* equation, size_t degree) {
 		//	Try rangeHalving
 		if (!foundSol)		foundSol = printSol(equation, degree, (tmpSol = getXRangeHalving(equation, degree)));
 	
-		//	Solution found: devide away with horner
-		if (foundSol)		solvePrintEq(devideBy(equation, degree, tmpSol), degree - 1);
+		//	Solution found: divide away with horner
+		if (foundSol)		solvePrintEq(divideBy(equation, degree, tmpSol), degree - 1);
 		else				printf("No real solutions found (other complex solutions possible).\n");
 	}
 }

@@ -3,14 +3,14 @@ Program that solves polynomials read and parsed by user input or from command li
 Gives all solutions in real and complex plane if (possible) using various methods.
 Base method: find a real solution and divide away with Horner, then solve quotient.
 
-equations.h  
+<b>equations.h  </b>
 A header containing every method necessary for solving equations. With structs.
 
-equations.old.h  
+<b>equations.old.h  </b>
 The initial header.
 
-rpoly.h  
+<b>rpoly.h  </b>
 Uses Jenkins-Traub algorithm to solve equations in both real and complex planes.
 
-_equationTester.c  
+<b>_equationTester.c  </b>
 The  main method for testing.

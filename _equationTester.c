@@ -3,7 +3,7 @@
 *		equations.h		Standard functions regarding equations;
 *						e.g. reading, printing, basic solver and operations.
 *
-*		rpoly.h			Advanced eaquation solver with read/print functions. 
+*		rpoly.h			Advanced equation solver with read/print functions. 
 *						Finds all solutions in both real and complex planes.
 */
 #include "equations.h"

@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-//#define _MORE_PRECISION		// Uncomment for more precision in print functions.
+//#define _MORE_PRECISION		// Uncomment for more precision in print functions. 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
